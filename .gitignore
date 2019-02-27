@@ -1,0 +1,14 @@
+## Mac OSX ##
+.DS_Store
+
+## NPM ##
+node_modules/
+
+## Compiled files ##
+public/bundle.js
+
+## passwords ##
+database/config.js
+
+## testing ##
+coverage/
