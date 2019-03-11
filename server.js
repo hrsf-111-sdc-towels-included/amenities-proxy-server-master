@@ -26,7 +26,7 @@ const theProxy = proxy(proxyOptions);
 app.use(express.static(__dirname + '/public'));
 
 app.get('/:itemID', (req, res) => {
-  // res.redirect(`/index.html?itemID=${req.params.itemID}`);
+  res.redirect(`/index.html?itemID=${req.params.itemID}`);
 });
 
 app.use(theProxy);
