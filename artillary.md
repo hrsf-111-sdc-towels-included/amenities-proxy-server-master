@@ -1,7 +1,7 @@
 ### Artillary Config:
 ```
 config:
-  target: 'http://localhost:3000'
+  target: 'http://localhost:80'
   phases:
     - duration: 60
       arrivalRate: 1000

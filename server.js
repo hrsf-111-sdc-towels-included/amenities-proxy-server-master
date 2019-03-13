@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const proxy = require('http-proxy-middleware');
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 //app.use(bodyParser.json());
 //app.use(bodyParser.urlencoded({extended: true}));
@@ -17,7 +17,7 @@ const proxyOptions = {
   target: "/",
   changeOrigin: true,
   router: {
-    "/amenities": "http://localhost:3003"
+    "/amenities": "http://ec2-54-67-8-180.us-west-1.compute.amazonaws.com"
   },
 }
 
